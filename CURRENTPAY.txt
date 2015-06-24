@@ -1,0 +1,19 @@
+create table CURRENTPAY
+(
+  accountnum     VARCHAR2(30),
+  ssssobjectname VARCHAR2(100),
+  gh             INTEGER,
+  ssssidcardnum  VARCHAR2(30),
+  regmoney       NUMBER(10,2),
+  objectcode     VARCHAR2(20)
+)
+tablespace COUNTYDATA
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64
+    minextents 1
+    maxextents unlimited
+  );

@@ -1,0 +1,70 @@
+//身份证验证
+create or replace function getVerify_ISO7064(
+
+idcard in varchar2
+
+) return varchar
+
+as
+
+
+type vi_TYPE is varray(11) of varchar2(1);
+
+vi vi_TYPE := vi_TYPE('1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2');
+
+v_num number;
+
+v_sum number;
+
+begin
+if idcard is null then return null ; end if;
+v_sum := 0;
+v_num := length(idcard);
+for i in 1 .. v_num loop
+v_sum := v_sum + (power(2,v_num -i+1) mod 11 ) * to_number(substr(idcard,i,1));
+-- DBMS_OUTPUT.PUT_LINE(v_sum);
+end loop;
+v_sum := v_sum mod 11;
+return vi(v_sum+1);
+end getVerify_ISO7064;
+
+
+//解密函数
+create or replace function JM_decryption(name in varchar2) return varchar2 is
+  Result varchar2(400);
+  ls_sql varchar2(4000);
+  v_length number := (length(name) - 2) / 9;
+  v_mm  varchar2(4000);
+  m number;
+begin
+   begin
+for i in 1 .. v_length loop
+      m:= i * 7 - 6;
+      ls_sql := 'select a.key from jm a where a.pass =substr(regexp_replace(''' || name || ''', ''\^1V6|V6'', ''''), ' || m || ', 7)';
+      execute immediate ls_sql  into v_mm;
+      Result := Result || v_mm;
+end loop;
+exception when others then Result := '';
+end;
+return(Result);
+end;
+
+
+//加密函数
+create or replace function JM_encryption(name in varchar2) return varchar2 is
+   Result varchar2(400);
+   ls_sql varchar2(4000);
+   v_length number:=length(name);
+   v_mm varchar2(4000);
+   v_am varchar2(4000);
+ begin
+   begin
+     for i in 1..v_length loop
+   ls_sql:='select substr('''||name||''','||i||',1) from dual ';
+      execute immediate ls_sql into v_mm;
+      ls_sql:='select a.pass from jm a where a.key='''||v_mm||'''';
+      execute immediate ls_sql into v_am;
+      Result:=Result||'V6'||v_am;
+     end loop;
+   exception when others then  Result:='';  end ; return(Result);
+ end ;

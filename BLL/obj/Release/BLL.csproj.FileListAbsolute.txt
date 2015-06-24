@@ -1,0 +1,11 @@
+D:\DropBox\Dropbox\hnbthelper\BLL\bin\Release\BLL.dll
+D:\DropBox\Dropbox\hnbthelper\BLL\bin\Release\BLL.pdb
+D:\DropBox\Dropbox\hnbthelper\BLL\bin\Release\DAL.dll
+D:\DropBox\Dropbox\hnbthelper\BLL\bin\Release\DBUtility.dll
+D:\DropBox\Dropbox\hnbthelper\BLL\bin\Release\Model.dll
+D:\DropBox\Dropbox\hnbthelper\BLL\bin\Release\DAL.pdb
+D:\DropBox\Dropbox\hnbthelper\BLL\bin\Release\DBUtility.pdb
+D:\DropBox\Dropbox\hnbthelper\BLL\bin\Release\Model.pdb
+D:\DropBox\Dropbox\hnbthelper\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+D:\DropBox\Dropbox\hnbthelper\BLL\obj\Release\BLL.dll
+D:\DropBox\Dropbox\hnbthelper\BLL\obj\Release\BLL.pdb

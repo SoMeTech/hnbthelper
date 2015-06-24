@@ -1,0 +1,114 @@
+
+
+***********************************************************************
+Fatal NI connect error 12541, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.18.244)(PORT=1521))(CONNECT_DATA=(SID=hnxc)(CID=(PROGRAM=D:\DropBox\Dropbox\hnbthelper\hnbthelper\bin\Debug\hnbthelper.exe)(HOST=XCG1035)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 29-5月 -2014 15:18:15
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12541
+    TNS-12541: Message 12541 not found; No message file for product=NETWORK, facility=TNS
+    ns secondary err code: 12560
+    nt main err code: 511
+    TNS-00511: Message 511 not found; No message file for product=NETWORK, facility=TNS
+    nt secondary err code: 61
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12541, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.18.244)(PORT=1521))(CONNECT_DATA=(SID=hnxc)(CID=(PROGRAM=D:\DropBox\Dropbox\hnbthelper\hnbthelper\bin\Debug\hnbthelper.exe)(HOST=XCG1035)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 29-5月 -2014 15:18:37
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12541
+    TNS-12541: Message 12541 not found; No message file for product=NETWORK, facility=TNS
+    ns secondary err code: 12560
+    nt main err code: 511
+    TNS-00511: Message 511 not found; No message file for product=NETWORK, facility=TNS
+    nt secondary err code: 61
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12541, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=127.0.0.1)(PORT=1521))(CONNECT_DATA=(SID=hnxc)(CID=(PROGRAM=D:\DropBox\Dropbox\hnbthelper\hnbthelper\bin\Debug\hnbthelper.exe)(HOST=XCG1035)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 10-6月 -2014 08:44:41
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12541
+    TNS-12541: Message 12541 not found; No message file for product=NETWORK, facility=TNS
+    ns secondary err code: 12560
+    nt main err code: 511
+    TNS-00511: Message 511 not found; No message file for product=NETWORK, facility=TNS
+    nt secondary err code: 61
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12170.
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 27-JUN-2014 20:59:42
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12535
+    TNS-12535: Message 12535 not found; No message file for product=NETWORK, facility=TNS
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Message 505 not found; No message file for product=NETWORK, facility=TNS
+    nt secondary err code: 60
+    nt OS err code: 0
+  Client address: <unknown>
+
+
+***********************************************************************
+Fatal NI connect error 12170.
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 09-7月 -2014 20:51:53
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12535
+    TNS-12535: Message 12535 not found; No message file for product=NETWORK, facility=TNS
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: Message 505 not found; No message file for product=NETWORK, facility=TNS
+    nt secondary err code: 60
+    nt OS err code: 0
+  Client address: <unknown>
+
+
+***********************************************************************
+Fatal NI connect error 12541, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=127.0.0.1)(PORT=1521))(CONNECT_DATA=(SID=hnxc)(CID=(PROGRAM=J:\DropBox\Dropbox\hnbthelper\hnbthelper\bin\Debug\hnbthelper.exe)(HOST=HWH-PC)(USER=Administrator))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.3.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.3.0 - Production
+  Time: 14-7月 -2014 10:01:17
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12541
+    TNS-12541: Message 12541 not found; No message file for product=NETWORK, facility=TNS
+    ns secondary err code: 12560
+    nt main err code: 511
+    TNS-00511: Message 511 not found; No message file for product=NETWORK, facility=TNS
+    nt secondary err code: 61
+    nt OS err code: 0

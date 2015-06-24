@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25025C34-3E7B-42AD-AA82-81F415BAF65C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>hnbthelper</RootNamespace>
+    <AssemblyName>hnbthelper</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3F4CFADE65B1FC5C77A9760D6674485DABA2FB4B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>湖南补贴系统助手_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>523.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LumiSoft.UI, Version=1.1.3820.37766, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\LumiSoft.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.3.1.24483, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoSizeForm.cs" />
+    <Compile Include="ComboBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmExtract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmExtract.Designer.cs">
+      <DependentUpon>frmExtract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmTools.designer.cs">
+      <DependentUpon>frmTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Singleton.cs" />
+    <Compile Include="UI\frmcmd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmcmd.designer.cs">
+      <DependentUpon>frmcmd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\frmRCpay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\frmRCpay.Designer.cs">
+      <DependentUpon>frmRCpay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\FrmRCdelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\FrmRCdelete.Designer.cs">
+      <DependentUpon>FrmRCdelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\frmRCQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\frmRCQuery.Designer.cs">
+      <DependentUpon>frmRCQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\frmRCexport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\frmRCexport.Designer.cs">
+      <DependentUpon>frmRCexport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\frmRcInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\frmRcInsert.Designer.cs">
+      <DependentUpon>frmRcInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC\frmRCBatchmanager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC\frmRCBatchmanager.Designer.cs">
+      <DependentUpon>frmRCBatchmanager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ConfigFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ConfigFrm.Designer.cs">
+      <DependentUpon>ConfigFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmBasic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmBasic.Designer.cs">
+      <DependentUpon>frmBasic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmExport.Designer.cs">
+      <DependentUpon>frmExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmImport.Designer.cs">
+      <DependentUpon>frmImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmModi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmModi.Designer.cs">
+      <DependentUpon>frmModi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmMuQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmMuQuery.Designer.cs">
+      <DependentUpon>frmMuQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmQuery.Designer.cs">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmDmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmDmp.Designer.cs">
+      <DependentUpon>frmDmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmSumQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmSumQuery.Designer.cs">
+      <DependentUpon>FrmSumQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmBFimp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmBFimp.Designer.cs">
+      <DependentUpon>frmBFimp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ComboBoxEx.resx">
+      <DependentUpon>ComboBoxEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmExtract.resx">
+      <DependentUpon>frmExtract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmTools.resx">
+      <DependentUpon>frmTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmcmd.resx">
+      <DependentUpon>frmcmd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\frmRCpay.resx">
+      <DependentUpon>frmRCpay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\FrmRCdelete.resx">
+      <DependentUpon>FrmRCdelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\frmRCQuery.resx">
+      <DependentUpon>frmRCQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\frmRCexport.resx">
+      <DependentUpon>frmRCexport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\frmRcInsert.resx">
+      <DependentUpon>frmRcInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC\frmRCBatchmanager.resx">
+      <DependentUpon>frmRCBatchmanager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ConfigFrm.resx">
+      <DependentUpon>ConfigFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmBasic.resx">
+      <DependentUpon>frmBasic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmExport.resx">
+      <DependentUpon>frmExport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmImport.resx">
+      <DependentUpon>frmImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmModi.resx">
+      <DependentUpon>frmModi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmMuQuery.resx">
+      <DependentUpon>frmMuQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmQuery.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmDmp.resx">
+      <DependentUpon>frmDmp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmSumQuery.resx">
+      <DependentUpon>FrmSumQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmBFimp.resx">
+      <DependentUpon>frmBFimp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="config.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{ABA32B69-CA55-4F37-B6D6-69A18F1229B3}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{3A2E0EA9-E7CE-4BDD-9F3B-2C44997D0113}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{0E7E9A15-10A7-47EB-AD94-02275657D220}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{EE159AF7-24D9-4A74-9A47-046228A3DB88}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="523.ico" />
+    <Content Include="oci.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="oramts.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="orannzsbb10.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="oraocci10.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="oraociei10.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

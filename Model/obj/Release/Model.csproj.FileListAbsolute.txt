@@ -1,0 +1,4 @@
+D:\DropBox\Dropbox\hnbthelper\Model\bin\Release\Model.dll
+D:\DropBox\Dropbox\hnbthelper\Model\bin\Release\Model.pdb
+D:\DropBox\Dropbox\hnbthelper\Model\obj\Release\Model.dll
+D:\DropBox\Dropbox\hnbthelper\Model\obj\Release\Model.pdb

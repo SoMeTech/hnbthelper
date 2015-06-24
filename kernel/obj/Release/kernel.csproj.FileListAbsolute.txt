@@ -1,0 +1,13 @@
+J:\DropBox\Dropbox\hnbthelper\kernel\bin\Release\kernel.dll
+J:\DropBox\Dropbox\hnbthelper\kernel\bin\Release\kernel.pdb
+J:\DropBox\Dropbox\hnbthelper\kernel\bin\Release\WeifenLuo.WinFormsUI.Docking.dll
+J:\DropBox\Dropbox\hnbthelper\kernel\obj\Release\hnbthelper.ComboBoxEx.resources
+J:\DropBox\Dropbox\hnbthelper\kernel\obj\Release\kernel.csproj.GenerateResource.Cache
+J:\DropBox\Dropbox\hnbthelper\kernel\obj\Release\kernel.dll
+J:\DropBox\Dropbox\hnbthelper\kernel\obj\Release\kernel.pdb
+F:\Dropbox\hnbthelper\kernel\obj\Release\kernel.csprojResolveAssemblyReference.cache
+F:\Dropbox\hnbthelper\kernel\obj\Release\kernel.dll
+F:\Dropbox\hnbthelper\kernel\bin\Release\kernel.dll
+F:\Dropbox\hnbthelper\kernel\bin\Release\kernel.pdb
+F:\Dropbox\hnbthelper\kernel\obj\Release\kernel.pdb
+F:\Dropbox\hnbthelper\kernel\bin\Release\LumiSoft.UI.dll
